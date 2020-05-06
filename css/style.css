@@ -917,15 +917,6 @@ body.offcanvas {
     -o-transform: scale(1.1);
     transform: scale(1.1); }
 
-.work-menu span {
-  margin-left: 10px; }
-  .work-menu span:first-child {
-    margin-left: 0; }
-  .work-menu span a {
-    color: #000; }
-    .work-menu span a.active {
-      color: #2c98f0; }
-
 .project {
   background-size: cover;
   background-position: center center;
@@ -1427,3 +1418,37 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+.tab {
+  overflow: hidden;
+	padding: none;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+	transition: 0.3s; }
+	
+.tab button.active {
+    color: #2c98f0; }
+
+
+/* Change background color of buttons on hover 
+.tab button:hover {
+  background-color: #ddd;
+}
+
+Create an active/current tablink class
+.tab button.active {
+  background-color: #ccc;
+}
+*/
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px 16px 12px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+}
