@@ -283,16 +283,15 @@ figure {
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
 #colorlib-hero .flexslider .slider-text2 {
-      max-height: 50px;
+      max-height: 40px;
       }
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
       min-height: 500px;
 		z-index: 9; }
-#colorlib-hero .flexslider .slider-text > .slider-text-inner2 {
-        
-        min-height: 50px;
+#colorlib-hero .flexslider .slider-text2 > .slider-text-inner2 {
+        max-height: 40px;
 }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
