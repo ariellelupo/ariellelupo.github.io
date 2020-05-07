@@ -241,6 +241,12 @@ figure {
     border: none;
     z-index: 1;
     margin-bottom: 0; }
+
+      #colorlib-hero .flexslider .slides2 li {
+        max-height: 35px;
+}
+        
+
     #colorlib-hero .flexslider .slides {
       position: relative;
       overflow: visible; }
@@ -276,11 +282,18 @@ figure {
             border: 2px solid #2c98f0; }
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
+#colorlib-hero .flexslider .slider-text2 {
+      max-height: 50px;
+      }
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
       min-height: 500px;
-      z-index: 9; }
+		z-index: 9; }
+#colorlib-hero .flexslider .slider-text > .slider-text-inner2 {
+        
+        min-height: 50px;
+}
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
@@ -1434,21 +1447,9 @@ body.offcanvas {
 .tab button.active {
     color: #2c98f0; }
 
-
-/* Change background color of buttons on hover 
-.tab button:hover {
-  background-color: #ddd;
-}
-
-Create an active/current tablink class
-.tab button.active {
-  background-color: #ccc;
-}
-*/
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 12px 16px 12px 12px;
-  /*border: 1px solid #ccc;*/
   border-top: none;
 }
+
