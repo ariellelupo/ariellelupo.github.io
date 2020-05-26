@@ -94,6 +94,8 @@
 
 		} , { offset: '85%' } );
 	};
+	
+	
 
 
 	var burgerMenu = function() {
