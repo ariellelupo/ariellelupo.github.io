@@ -746,7 +746,8 @@ body.offcanvas {
 .progress-wrap h3 {
   font-size: 16px;
   font-family: "Quicksand", Arial, sans-serif;
-  margin-bottom: 10px; }
+  margin-bottom: 40px;
+  margin-top: 10px;}
 
 .progress {
   height: 6px;
@@ -759,33 +760,23 @@ body.offcanvas {
   background: #2c98f0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.2;
   color: #000;
   font-weight: 600;
-  text-align: right;
+  text-align: left;
   position: relative;
   overflow: visible;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
-  border-radius: 8px; }
-  .progress-bar:after {
-    position: absolute;
-    top: -2px;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    content: '';
-    background: #2c98f0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
   .progress-bar span {
     position: absolute;
     top: -22px;
-    right: 0; }
+    left: 0;}
   .progress-bar.color-1 {
     background: #2c98f0; }
     .progress-bar.color-1:after {
