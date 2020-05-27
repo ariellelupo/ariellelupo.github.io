@@ -120,7 +120,7 @@
 					   					<div class="desc">
 						   					<h1>Arielle Lupo</h1>
 												<!--<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>-->
-											<p><l1><a class="btn btn-primary btn-learn" href="images/Resume.pdf" download>View Resume <i class="icon-briefcase3"></i></a></l1></p>
+											<p><l1><a class="btn btn-primary btn-learn" href="images/Resume.pdf" download>Download Resume <i class="icon-briefcase3"></i></a></l1></p>
 												
 					   						</div>
 										</div>
@@ -141,12 +141,14 @@
 									<div class="about-desc">
 										<span class="heading-meta">Who Am I?</span>
 										<h2 class="colorlib-heading">About Me</h2>
+										<div class="animate-box" data-animate-effect="fadeInBottom">
 										<p><strong>Hi I'm Arielle!</strong> I am currently in my final year at the University of Utah obtaining an undergraduate degree in biomedical engineering with a minor in marketing.</p>
 										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 									</div>
+									</div>
 								</div>
 							</div>
-							<div class="row">
+						<!--	<div class="row">
 								<div class="animate-box" data-animate-effect="fadeInBottom">
 									<div class="col-md-3"> 
 									<div class="services color-1">
@@ -175,7 +177,9 @@
 										<center><h3>Photography</h3></center>
 										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 									</div>
-								</div>
+								</div> -->
+							
+							
 							</div>
 						</div>
 					
@@ -391,8 +395,8 @@
 						
 					</div>
 				</div>
-			</section>
-
+			</section>				
+					
 			<section class="colorlib-experience" data-section="experience">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -414,12 +418,29 @@
 
 					               <div class="timeline-label">
 					                  <h2><a href="#">Associate Director of Photography</a> <span>2017-2018</span></h2>
-					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+					                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots1">... &zwnj; &zwnj;</span><span id="more1">&zwnj; &zwnj;hehehe hidden &zwnj;</span><strong><span class="readmore" onclick="workentry1()" id="Work1">Read more</span></strong></p>
+									  								   
 					               </div>
 					            </div>
 					         </article>
 							 
-							 
+<script>
+function workentry1() {
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var Work1 = document.getElementById("Work1");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    Work1.innerHTML = "Read more"; 
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    Work1.innerHTML = "Read less"; 
+    moreText1.style.display = "inline";
+  }
+}
+</script>				 
 
 
 					         <article class="timeline-entry">
@@ -476,6 +497,11 @@
 					            </div>
 					         </article>
 								 
+						
+								 
+								 
+								 <div id="Works">
+									 
 								 <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-5">
@@ -486,7 +512,35 @@
 					                  <p>Worked on a creative team to make stunning marketing materials to advertise, brand and promote AdThing's clients. Utilized Adobe Creative Cloud (Photoshop, Illustrator, Premiere, and Lightroom) to create effective marketing materials such as posters, logos, and online graphics. Demonstrated strong aptitude in design, communication, and technical skills to create unique and relevant solutions for each client.</p>
 					               </div>
 					            </div>
+									 
 					         </article>
+									 </div>
+								 
+								 <article class="timeline-entry">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					                  
+					               </div>
+					               <div class="timeline-label">
+								 <p id="workmore" class="readmore btn btn-primary btn-lg btn-load-more" onclick="timelineshowmore()">See Full List</p>
+					
+									   </div>
+									</article>
+								 
+<script>
+function timelineshowmore() {
+  var ww = document.getElementById("Works");
+  var workmore = document.getElementById("workmore");
+  if (ww.style.display === "block") {
+      ww.style.display = "none";
+	  workmore.innerHTML = "See Full List"; 
+	  
+  } else {
+    ww.style.display = "block";
+	workmore.innerHTML = "Hide List"; 
+  }
+}
+</script>								 
 
 					         <article class="timeline-entry begin">
 					            <div class="timeline-entry-inner">
