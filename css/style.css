@@ -233,6 +233,16 @@ figure {
       width: 100%;
       padding: 0 1em; } }
 
+#colorlib-maintop {
+  float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  @media screen and (max-width: 768px) {
+    #colorlib-main {
+      width: 100%;
+      padding: 0 1em; } }
+
 #colorlib-hero {
   min-height: 500px;
   background: #fff url(../images/loader.gif) no-repeat center center;
@@ -1576,7 +1586,7 @@ body.offcanvas {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 95%;
   max-width: 700px;
 }
 
