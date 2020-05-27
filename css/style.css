@@ -240,7 +240,7 @@ figure {
   -o-transition: 0.5s;
   transition: 0.5s; }
 @media screen and (max-width: 768px) {
-    #colorlib-main {
+    #colorlib-maintop {
 		width: 100%; } }
 
 
