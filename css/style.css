@@ -234,14 +234,15 @@ figure {
       padding: 0 1em; } }
 
 #colorlib-maintop {
+  width: calc(100% - 300px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-main {
+    #colorlib-maintop {
       width: 100%;
-      padding: 0 1em; } }
+       } }
 
 #colorlib-hero {
   min-height: 500px;
