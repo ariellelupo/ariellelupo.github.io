@@ -1634,7 +1634,7 @@ body.offcanvas {
 
 
 
-#myImg {
+#myImg1 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -1718,3 +1718,12 @@ body.offcanvas {
     width: 100%;
   }
 }
+
+#more1 {display: none;}
+
+.readmore {
+cursor: pointer;
+}
+
+#Works {display: none;
+}	
