@@ -1093,7 +1093,7 @@ body.offcanvas {
       transform: translate3d(0, 15px, 0); }
       .project2 .desc span a {
         color: #000; }
-    @media screen and (max-width: 768px) {
+  /*  @media screen and (max-width: 768px) {
       .project2 .desc {
         opacity: 1;
         background: rgba(0, 0, 0, 0.4); }
@@ -1104,7 +1104,7 @@ body.offcanvas {
           color: #000; }
         .project2 .desc span {
           -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
+          transform: translate3d(0, 0, 0); } } */
   .project2:hover .desc {
     opacity: 1; }
     .project2:hover .desc h3 {
@@ -1112,98 +1112,7 @@ body.offcanvas {
       transform: translate3d(0, 0, 0); }
     
 
-.project3 {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 400px;
-  width: 100%;
-  display: block;
-  margin-bottom: 30px; }
-  .project3 .desc {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .project3 .desc .con {
-      padding: 20px;
-      display: block;
-      position: relative;
-      height: 300px; }
-      .project3 .desc .con .icon {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px; }
-        .project3 .desc .con .icon span {
-          display: inline;
-          padding-right: 5px; }
-          .project3 .desc .con .icon span a {
-            color: #333333;
-            padding: 5px;
-            background: rgba(255, 255, 255, 0.5);
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            -ms-border-radius: 4px;
-            border-radius: 4px; }
-        .project3 .desc .con .icon i {
-          font-size: 16px;
-          color: #333333; }
-    .project3 .desc h3 {
-      font-family: "Quicksand", Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-      transition: opacity 0.3s, -webkit-transform 0.3s;
-      -o-transition: transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-      margin-bottom: 15px; }
-      .project3 .desc h3 a {
-        color: #fff; }
-    .project3 .desc span {
-      display: block;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 13px;
-      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-      transition: opacity 0.3s, -webkit-transform 0.3s;
-      -o-transition: transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-      -webkit-transform: translate3d(0, 15px, 0);
-      transform: translate3d(0, 15px, 0); }
-      .project3 .desc span a {
-        color: #000; }
-    @media screen and (max-width: 768px) {
-      .project3 .desc {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.4); }
-        .project3 .desc h3 {
-          font-style: 28px;
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-          color: #000; }
-        .project3 .desc span {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
-  .project3:hover .desc {
-    opacity: 1; }
-    .project3:hover .desc h3 {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-    
+
 
 .btn-load-more {
   width: 100%; }
@@ -1671,7 +1580,7 @@ body.offcanvas {
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/* Caption of Modal Image (Image Text) - Same Width as the Image 
 #caption {
   margin: auto;
   display: block;
@@ -1680,8 +1589,8 @@ body.offcanvas {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
-}
+  height: 150px; 
+} */
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
@@ -1712,12 +1621,16 @@ body.offcanvas {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* 100% Image Width on Smaller Screens
+@media only screen {
   .modal-content {
-    width: 100%;
+    max-height: calc(100vh - 200px);
+    max-width: calc(100vw - 400px); 
+    overflow-y: auto;
+	overflow-x: auto; 
   }
 }
+*/
 
 #more1 {display: none;}
 
@@ -1727,3 +1640,9 @@ cursor: pointer;
 
 #Works {display: none;
 }	
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
