@@ -239,8 +239,11 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  
-       
+  @media screen (max-width: 768px) {
+    #colorlib-maintop {
+      width: 100%;
+	  padding: 0;
+       } }
 
 #colorlib-hero {
   min-height: 500px;
