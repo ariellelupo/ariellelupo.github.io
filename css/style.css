@@ -222,7 +222,7 @@ figure {
   max-width: 100%;
   margin: 0 auto; }
 
-#colorlib-main {
+#colorlib-main #colorlib-maintop{
   width: calc(100% - 300px);
   float: right;
   -webkit-transition: 0.5s;
@@ -231,18 +231,10 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } }
-
-#colorlib-maintop {
-  width: calc(100% - 300px);
-  float: right;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-@media screen and (max-width: 768px) {
+      padding: 0 1em; } 
     #colorlib-maintop {
-	  width: 100%; } }
-
+      width: 100%;
+      padding: 0 0; } }
 
 #colorlib-hero {
   min-height: 500px;
@@ -387,13 +379,6 @@ body.offcanvas {
     -ms-transform: translateX(300px);
     -o-transform: translateX(300px);
     transform: translateX(300px); }
-  body.offcanvas #colorlib-maintop {
-    top: 0;
-    -moz-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    transform: translateX(0px); }
 
 .colorlib-narrow-content {
   padding: 0 2.5em; }
@@ -1598,7 +1583,7 @@ body.offcanvas {
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image 
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
   display: block;
@@ -1607,8 +1592,8 @@ body.offcanvas {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px; 
-} */
+  height: 150px;
+}
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
@@ -1639,13 +1624,10 @@ body.offcanvas {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens
-@media only screen {
+/* 100% Image Width on Smaller Screens 
+@media only screen and (max-width: 700px){
   .modal-content {
-    max-height: calc(100vh - 200px);
-    max-width: calc(100vw - 400px); 
-    overflow-y: auto;
-	overflow-x: auto; 
+    width: 100%;
   }
 }
 */
@@ -1658,7 +1640,6 @@ cursor: pointer;
 
 #Works {display: none;
 }	
-
 
 img {
     max-width: 100%;
