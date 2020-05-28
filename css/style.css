@@ -37,7 +37,7 @@ a {
 p {
   margin-bottom: 1.5em; }
 
-h1, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
@@ -48,6 +48,12 @@ h2 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 0px 0; }
+
+h3 {
+  color: #000;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  margin: 0 0 10px 0; }
 
 figure {
   margin-bottom: 2.5em;
@@ -558,6 +564,7 @@ body.offcanvas {
   position: absolute;
   display: block;
   width: 4px;
+ /* height: calc(100% - 10%); */
   background: #f2f3f7;
   top: 20px;
   bottom: 20px;
@@ -599,6 +606,12 @@ body.offcanvas {
     background: #a84cb8; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
     background: #2fa499; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-6 {
+    background: #4054b2; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-7 {
+    background: #92C781; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-8 {
+    background: #D56BC0; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
     background: #fff;
     width: 20px;
@@ -658,9 +671,15 @@ body.offcanvas {
   .services .icon2 {
     display: block;
     margin-bottom: 20px; }
+  .services .icon1 {
+    display: block;
+    margin-bottom: 20px; }
     .services .icon2 i {
       font-size: 30px;
       color: #2c98f0; }
+    .services .icon1 i {
+      font-size: 30px;
+      color: #2fa499; }
   .services h3 {
     font-family: "Quicksand", Arial, sans-serif;
     font-size: 16px;
@@ -1130,7 +1149,97 @@ body.offcanvas {
       transform: translate3d(0, 0, 0); }
     
 
-
+.projectportait {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px; }
+  .projectportait .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .projectportait .desc .con {
+      padding: 20px;
+      display: block;
+      position: relative;
+      height: 300px; }
+      .projectportait .desc .con .icon {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px; }
+        .projectportait .desc .con .icon span {
+          display: inline;
+          padding-right: 5px; }
+          .projectportait .desc .con .icon span a {
+            color: #333333;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            border-radius: 4px; }
+        .projectportait .desc .con .icon i {
+          font-size: 16px;
+          color: #333333; }
+    .projectportait .desc h3 {
+      font-family: "Quicksand", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      -o-transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+      margin-bottom: 15px; }
+      .projectportait .desc h3 a {
+        color: #fff; }
+    .projectportait .desc span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      -o-transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: translate3d(0, 15px, 0);
+      transform: translate3d(0, 15px, 0); }
+      .projectportait .desc span a {
+        color: #000; }
+  /*  @media screen and (max-width: 768px) {
+      .project2 .desc {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4); }
+        .project2 .desc h3 {
+          font-style: 28px;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          color: #000; }
+        .project2 .desc span {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); } } */
+  .projectportait:hover .desc {
+    opacity: 1; }
+    .projectportait:hover .desc h3 {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
 
 .btn-load-more {
   width: 100%; }
@@ -1540,7 +1649,8 @@ body.offcanvas {
 
 .tab {
   overflow: hidden;
-	padding: none;
+  padding: none;
+  background: #FFFFFF;
 }
 
 .tab button {
@@ -1650,8 +1760,17 @@ body.offcanvas {
 #MORE1 {display: none;}
 #MORE2 {display: none;}
 #MORE3 {display: none;}
+#MORE4 {display: none;}
+#MORE5 {display: none;}
+#MORE6 {display: none;}
+#MORE7 {display: none;}
+#MORE8 {display: none;}
+#MORE9 {display: none;}
 
 #MOREV1 {display: none;}
+#MOREV2 {display: none;}
+#MOREV3 {display: none;}
+#MOREV4 {display: none;}
 
 .readmore {
 cursor: pointer;
@@ -1670,7 +1789,37 @@ pc1 {
 	margin: 0 0 5px 0; 
 }
 
+pc2 {
+	color: #ec5453;
+	margin: 0 0 5px 0; 
+}
+
 pc3 {
 	color: #f9bf3f;
+	margin: 0 0 5px 0; 
+}
+
+pc4 {
+	color: #a84cb8;
+	margin: 0 0 5px 0; 
+}
+
+pc5 {
+	color: #2fa499;
+	margin: 0 0 5px 0; 
+}
+
+pc6 {
+	color: #4054b2;
+	margin: 0 0 5px 0; 
+}
+
+pc7 {
+	color: #92C781;
+	margin: 0 0 5px 0; 
+}
+
+pc8 {
+	color: #D56BC0;
 	margin: 0 0 5px 0; 
 }
