@@ -387,6 +387,13 @@ body.offcanvas {
     -ms-transform: translateX(300px);
     -o-transform: translateX(300px);
     transform: translateX(300px); }
+  body.offcanvas #colorlib-maintop {
+    top: 0;
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); }
 
 .colorlib-narrow-content {
   padding: 0 2.5em; }
