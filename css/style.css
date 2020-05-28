@@ -37,11 +37,17 @@ a {
 p {
   margin-bottom: 1.5em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
+
+h2 {
+  color: #000;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  margin: 0 0 0px 0; }
 
 figure {
   margin-bottom: 2.5em;
@@ -1641,7 +1647,8 @@ body.offcanvas {
 }
 */
 
-#more1 {display: none;}
+#MORE {display: none;}
+#MORE1 {display: none;}
 
 .readmore {
 cursor: pointer;
@@ -1653,4 +1660,9 @@ cursor: pointer;
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+pc3 {
+	color: #f9bf3f;
+	margin: 0 0 5px 0; 
 }
