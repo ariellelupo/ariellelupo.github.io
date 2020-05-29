@@ -1698,14 +1698,6 @@ body.offcanvas {
 
 
 
-#myImg1 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-
-
 
 
 .modal {
@@ -1728,13 +1720,27 @@ body.offcanvas {
 }
 
 /* Modal Content (Image) */
-.modal-content {
+.modal-contentl {
   overflow: scroll;
   margin: auto;
   display: block;
   width: 95%;
   max-width: 700px;
 }
+
+.modal-contentp {
+  overflow: scroll;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: block;
+  height: 95%;
+  
+}
+
+
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -1850,4 +1856,9 @@ pc7 {
 pc8 {
 	color: #D56BC0;
 	margin: 0 0 5px 0; 
+}
+
+.articlelink {
+	color: #2c98f0;
+	
 }
