@@ -1709,7 +1709,7 @@ body.offcanvas {
   display: none; /* Hidden by default */
   position: fixed;
 
-  padding-top: 100px; /* Location of the box */
+  padding-top: 25px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
