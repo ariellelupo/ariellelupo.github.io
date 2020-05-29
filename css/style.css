@@ -577,9 +577,23 @@ body.offcanvas {
   margin-bottom: 10px;
   clear: both; }
 
+.timeline-centered .timeline-entry {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  clear: both; }
+
 .timeline-centered .timeline-entry .timeline-entry-inner {
   position: relative;
   margin-left: -20px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner2 {
+  position: relative;
+  margin-left: -20px;
+}
+
+
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
   display: block;
@@ -597,6 +611,8 @@ body.offcanvas {
   line-height: 40px;
   float: left; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+    color: #fff; }
+  .timeline-centered .timeline-entry .timeline-entry-inner2 .timeline-icon2 i {
     color: #fff; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
     background: #ec5453; }
@@ -618,6 +634,7 @@ body.offcanvas {
     height: 20px;
     margin-left: 10px; }
 
+
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
   background: #f2f3f7;
@@ -626,6 +643,16 @@ body.offcanvas {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner2 .timeline-label2 {
+  position: relative;
+  background: #ffffff;
+  padding: 1.5em;
+  margin-left: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; 
+}
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
   content: '';
@@ -1702,6 +1729,7 @@ body.offcanvas {
 
 /* Modal Content (Image) */
 .modal-content {
+  overflow: scroll;
   margin: auto;
   display: block;
   width: 95%;
