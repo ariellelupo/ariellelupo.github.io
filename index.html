@@ -884,9 +884,10 @@ function volentry4() {
 							
 						<div id="myImg1" class="project2" style="background-image: url(images/img-1.jpg);">
 									<div id="myModal1" class="modal">
+										
  									 <div class="modal-contentl">
-									
-									 <img src="images/img-1.jpg">
+									<div class="close">&times;</div>
+									 <img id="imgg1" src="images/img-1.jpg">
 									 </div>
 								</div>
 								<div class="desc">
@@ -904,7 +905,7 @@ function volentry4() {
 						<div id="myImg2" class="project2" style="background-image: url(images/img-2.jpg);">
 									<div id="myModal2" class="modal">
  									 <div class="modal-contentp">
-									
+									<div class="close">&times;</div>
 									 <img src="images/img-2.jpg">
 									 </div>
 								</div>
@@ -923,7 +924,7 @@ function volentry4() {
 								<div id="myImg3" class="projectportait" style="background-image: url(images/MG0029.jpg);">
 									<div id="myModal3" class="modal">
  									 <div class="modal-contentp">
-									
+									<div class="closep">&times;</div>
 									<img src="images/MG0029.jpg">
 									 </div>
 								</div>
@@ -1085,10 +1086,10 @@ img2.onclick = function(){
 img3.onclick = function(){
   modal3.style.display = "block";}
 
-
+var imggg1 = document.getElementById("imgg1");
 
 window.onclick = function(event) {
-  if (event.target == modal1 || event.target == modal2 || event.target == modal3) {
+  if (event.target == imggg1 || event.target == modal2 || event.target == modal3) {
     modal1.style.display = "none";
 	modal2.style.display = "none";
 	modal3.style.display = "none";
