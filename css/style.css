@@ -1709,7 +1709,7 @@ body.offcanvas {
   display: none; /* Hidden by default */
   position: fixed;
 
-  padding-top: 25px; /* Location of the box */
+  padding-top: 0px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -1752,7 +1752,12 @@ body.offcanvas {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-contentl, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.modal-contentp, #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -1764,21 +1769,30 @@ body.offcanvas {
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
+  position: relative;
+  z-index: 9000090;
+  top: 40px;
+  right: 15px;
+  color: #000000;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+	pointer-events: none;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.closep {
+  position: relative;
+  z-index: 9000090;
+  top: 60px;
+  left: 15px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+	pointer-events: none;
 }
+
+
 
 /* 100% Image Width on Smaller Screens 
 @media only screen and (max-width: 700px){
