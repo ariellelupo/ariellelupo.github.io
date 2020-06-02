@@ -1852,6 +1852,13 @@ pc8 {
 	
 }
 
+@media screen and (max-width:700px){
+    p{
+        
+        font-size:14px !important;
+    }  
+}
+
 #MOREV1 {display: none;}
 #MOREV2 {display: none;}
 #MOREV3 {display: none;}
