@@ -328,20 +328,19 @@
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingOne">
 									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelor Degree in  Biomedical Engineering
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Bachelor Degree in  Biomedical Engineering
 									            </a>
 									        </h4>
 									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									           
-										      			<pc2><strong>UNIVERSITY OF UTAH</strong></pc2>
+									    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+									        <div class="panel-body">
+									            <pc2><strong>UNIVERSITY OF UTAH</strong></pc2>
 															<i><p>2016-2021</p></i>
 														<p><strong>Notable Courses: </strong>BioDesign Biomaterials Biomechanics Biotransport Computational Methods Computing in Physics Differential Equations and Linear Algebra Physics II Physiology for Engineers</p>
-										      		
-									         </div>
+									        </div>
 									    </div>
 									</div>
+									
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingTwo">
 									        <h4 class="panel-title">
@@ -366,7 +365,10 @@
 									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 									        <div class="panel-body">
 									            <pc5><strong>MERIT COLLEGE PREPARATORY ACADEMY</strong></pc5>
-															<i><p>2012-2016</p></i>	
+															<i><p>2012-2016</p></i>
+												<p>Concurrent Enrollment with Utah Valley University to earn college and high school credits simultaneously.
+													
+													<strong>Notable Courses: </strong>Yearbook Editor in Chief, Student Government, National Honor Society, ASK (service club), Photography Club</p>
 									        </div>
 									    </div>
 									</div>
@@ -624,15 +626,20 @@ function changeClass() {
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a>Director of Marketing</a> <span>May 2019-May 2020, Salt Lake City, Utah</span></h2>
+					               	<h2><a>Associate Director of Photography</a> <span>May 2020-Present, Salt Lake City, Utah</span></h2>
+					                 <pc5>ASSOCIATED STUDENTS OF THE UNIVERSITY OF UTAH</pc5>
+					                 <p>Designed individualized event and cause marketing materials and campaigns.<span id="extra_contentw6" class="extra_contentw6"> yeet</span>
+									<strong><span class="read_morew6" id="read_morew6">Read More</span></strong></p>
+									   <p> <center>    |</center> </p>
+									   <h2><a>Director of Marketing</a> <span>May 2019-May 2020, Salt Lake City, Utah</span></h2>
 					                 <pc5>ASSOCIATED STUDENTS OF THE UNIVERSITY OF UTAH</pc5>
 					                 <p>Hired and lead a team of six employees to effectively market, brand and promote ASUU and all of its events and initiatives. Allocated funds from a budget of $25,000, to create strong branding strategies and manage the reputation of the organization. Scheduled and lead team meetings to foster involvement and growth both as a group and individually. Increased the online followings and interactions of ASUU's social media more than 10% on all platforms (50% on Twitter). Crafted and executed a campaign that reached a 85,000 people which was more than 3x the total population of the target audience.<span id="extra_contentw5" class="extra_contentw5"> Boop</span>
 									<strong><span class="read_morew5" id="read_morew5">Read More</span></strong></p>
 									   <p> <center>    |</center> </p>
 									   <h2><a>Associate Director of Graphic Design</a> <span>January 2019-May 2019, Salt Lake City, Utah</span></h2>
 					                 <pc5>ASSOCIATED STUDENTS OF THE UNIVERSITY OF UTAH</pc5>
-					                 <p>Designed individualized event and cause marketing materials and campaigns. Used Adobe Photoshop and Illustrator extensively to craft designs to be physically printed, posted on social media, and distributed through other methods. Drove initiatives to brand ASUU and utilized strategic communication to convey complex messages visually in an engaging way.<span id="extra_contentw6" class="extra_contentw6"> Boop</span>
-									<strong><span class="read_morew6" id="read_morew6">Read More</span></strong></p>
+					                 <p>Designed individualized event and cause marketing materials and campaigns.<span id="extra_contentw6a" class="extra_contentw6a"> Used Adobe Photoshop and Illustrator extensively to craft designs to be physically printed, posted on social media, and distributed through other methods. Drove initiatives to brand ASUU and utilized strategic communication to convey complex messages visually in an engaging way.</span>
+									<strong><span class="read_morew6a" id="read_morew6a">Read More</span></strong></p>
 					               </div>
 					            </div>
 					         </article>
@@ -670,7 +677,24 @@ function changeClass() {
             btn.innerHTML = "Read More";
         }
 }
-</script>						
+</script>
+								 
+								 <script>
+
+document.getElementById("read_morew6a").addEventListener( 'click' , changeClass);
+
+function changeClass() {
+    var content = document.getElementById("extra_contentw6a");
+    var btn = document.getElementById("read_morew6a");
+    content.classList.toggle('show');
+    
+    if (content.classList.contains("show")) {
+            btn.innerHTML = "Read Less";
+        } else {
+            btn.innerHTML = "Read More";
+        }
+}
+</script>
 								 <div id="Works">
 								 
 					         <article class="timeline-entry">
@@ -715,29 +739,12 @@ function changeClass() {
 					               <div class="timeline-label">
 					               	<h2><a href="#">Graphic Designer and Illustrator</a> <span>February 2017-December 2017, Salt Lake City, Utah</span></h2>
 					                  <pc7>ADTHING</pc7>
-					                 <p>Designed stunning marketing materials to advertise, brand and promote AdThing's clients. Utilized Adobe Creative Cloud (Photoshop, Illustrator, Premiere, and Lightroom) to create effective marketing materials such as posters, logos, and online graphics. Demonstrated strong aptitude in design, communication, and technical skills to create unique and relevant solutions for each client.<span id="extra_contentw8" class="extra_contentw8"> Boop</span>
-									<strong><span class="read_morew8" id="read_morew8">Read More</span></strong></p>
+					                 <p>Designed stunning marketing materials to advertise, brand and promote AdThing's clients. Utilized Adobe Creative Cloud (Photoshop, Illustrator, Premiere, and Lightroom) to create effective marketing materials such as posters, logos, and online graphics. Demonstrated strong aptitude in design, communication, and technical skills to create unique and relevant solutions for each client.</p>
 					               </div>
 					            </div>
 									 
 					         </article>
-									 
-<script>
-
-document.getElementById("read_morew8").addEventListener( 'click' , changeClass);
-
-function changeClass() {
-    var content = document.getElementById("extra_contentw8");
-    var btn = document.getElementById("read_morew8");
-    content.classList.toggle('show');
-    
-    if (content.classList.contains("show")) {
-            btn.innerHTML = "Read Less";
-        } else {
-            btn.innerHTML = "Read More";
-        }
-}
-</script>								 
+									 							 
 									 
 									 <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
@@ -822,7 +829,7 @@ function timelineshowmore() {
 										<span class="icon1"><center><i class="icon-bulb"></center></i></span>
 										<center><h3>It's On Us Utah Chapter</h3>
 										<pc5>Digital Reporter 2019-2020</pc5></center>
-										<p><left><span id="MOREV1">&zwnj; &zwnj;tttt &zwnj;</span></left><center><span class="readmore" onclick="volentry1()" id="Vol1">See Description</span></p></center>
+										<p><left><span id="MOREV1"><br> &zwnj;</br>It's On Us is a national organization with collegiate chapters dedicated to ending sexual assault on college campuses. <br> &zwnj;</br> Managed the online presence of the Utah chapter and created marketing materials to promote events and awareness of the cause. Works to brand the organization and generate funding from donors and fundraising. &zwnj;</span></left><center><span class="readmore" onclick="volentry1()" id="Vol1">See Description</span></p></center>
 									</div>
 								</div>
 									
@@ -845,8 +852,8 @@ function volentry1() {
 								<div class="col-md-3">
 									<div class="services color-2">
 										<span class="icon2"><center><i class="icon-globe-outline"></i></center></span>
-										<center><h3>UPC</h3>
-										<pc2>Digital Reporter 2019-2020</pc2></center>
+										<center><h3>Union Programming Council</h3>
+										<pc2>Freshman Ambassador Board Associate Director</pc2></center>
 										<p><span id="MOREV2">&zwnj; &zwnj;tttt &zwnj;</span><center><span class="readmore" onclick="volentry2()" id="Vol2">See Description</span></p></center>
 									</div>
 								</div>
@@ -871,8 +878,10 @@ function volentry2() {
 									<div class="services color-1">
 										<span class="icon2"><center><i class="icon-data"></i></center></span>
 										<center><h3>Kappa Kappa Gamma</h3>
-										<pc1>Digital Reporter 2019-2020</pc1></center>
-										<p><span id="MOREV3">&zwnj; &zwnj;tttt &zwnj;</span><center><span class="readmore" onclick="volentry3()" id="Vol3">See Description</span></center></p></center>
+										<pc1>VP Organization 2019-Present</pc1></center>
+										<p><span id="MOREV3"><br> &zwnj;</br>Kappa Kappa Gamma is a women's fraternity whose goal is to support and connect collegiate women with resources, opportunities, and people to further their future goals.
+
+<br> &zwnj;</br>Manages calendar for the organization and coordinates chapter committees. Acts as a liaison between chapter and nationals by hosting fraternity visitors and compiling data into reports &zwnj;</span><center><span class="readmore" onclick="volentry3()" id="Vol3">See Description</span></center></p></center>
 									</div>
 								</div>
 									
@@ -892,7 +901,7 @@ function volentry3() {
 }
 </script>									
 									
-								<div class="col-md-3">
+				<!--				<div class="col-md-3">
 									<div class="services color-4">
 										<span class="icon2"><center><i class="icon-phone3"></i></center></span>
 										<center><h3>Photography</h3><pc4>Digital Reporter 2019-2020</pc4></center>
@@ -915,7 +924,7 @@ function volentry4() {
   }
 }
 </script>								
-									
+					-->				
 						
 			</section>
 						
@@ -944,8 +953,8 @@ function volentry4() {
 					</div>
 					<div id="photography" class="tabcontent">
 					<div class="row">
-					<div class="col-md-6" data-animate-effect="fadeInLeft">
-							
+						
+					<div class="col-md-6">	
 						<div id="myImg1" class="project2" style="background-image: url(images/img-1.jpg);">
 									<div id="myModal1" class="modal">
 										
@@ -1003,8 +1012,14 @@ function volentry4() {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+						<div class="col-md-66">
+							<div id="myImg4" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal4" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg4" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1014,8 +1029,14 @@ function volentry4() {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+						<div class="col-md-66">
+							<div id="myImg5" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal5" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg5" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1025,8 +1046,14 @@ function volentry4() {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+						<div class="col-md-66">
+							<div id="myImg6" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal6" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg6" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1036,53 +1063,112 @@ function volentry4() {
 								</div>
 							</div>
 						</div>						
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project2" style="background-image: url(images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
-										<span>Illustration</span>
+						
+						<div class="col-md-6">	
+						<div id="myImg7" class="project2" style="background-image: url(images/img-3.jpg);">
+									<div id="myModal7" class="modal">
 										
-									</div>
+ 									 <div class="modal-contentl">
+									<div class="close">&times;</div>
+									 <img id="imgg7" src="images/img-3.jpg">
+									 </div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project2" style="background-image: url(images/img-4.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 04</a></h3>
-										<span>Application</span>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project2" style="background-image: url(images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 05</a></h3>
-										<span>Graphic, Logo</span>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project2" style="background-image: url(images/img-6.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
 									
 									</div>
+								
 								</div>
 							</div>
 						</div>
 						
-						<div class="col-md-66" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+					<div class="col-md-6">	
+						<div id="myImg8" class="project2" style="background-image: url(images/img-4.jpg);">
+									<div id="myModal8" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg8" src="images/img-4.jpg">
+									 </div>
+								</div>
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+									
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6">	
+						<div id="myImg9" class="project2" style="background-image: url(images/img-5.jpg);">
+									<div id="myModal9" class="modal">
+										
+ 									 <div class="modal-contentl">
+									<div class="close">&times;</div>
+									 <img id="imgg9" src="images/img-5.jpg">
+									 </div>
+								</div>
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+									
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+					<div class="col-md-6">	
+						<div id="myImg10" class="project2" style="background-image: url(images/img-6.jpg);">
+									<div id="myModal10" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg10" src="images/img-6.jpg">
+									 </div>
+								</div>
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+									
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-66">
+								<div id="myImg11" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+									<div id="myModal11" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg11" src="images/MG0029.jpg">
+									 </div>
+								</div>
+								
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+									
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-md-66">
+							<div id="myImg12" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal12" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg12" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1092,8 +1178,14 @@ function volentry4() {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+						<div class="col-md-66">
+							<div id="myImg13" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal13" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg13" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1103,8 +1195,14 @@ function volentry4() {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
+						<div class="col-md-66">
+							<div id="myImg14" class="projectportait" style="background-image: url(images/MG0029.jpg);">
+								<div id="myModal14" class="modal">
+ 									 <div class="modal-contentp">
+									<div class="close">&times;</div>
+									 <img id="imgg14" src="images/MG0029.jpg">
+									 </div>
+								</div>
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 06</a></h3>
@@ -1113,18 +1211,8 @@ function volentry4() {
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-66 animate-box" data-animate-effect="fadeInRight">
-							<div class="projectportait" style="background-image: url(images/MG0029.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
+						</div>					
 										
-									</div>
-								</div>
-							</div>
-						</div>						
 
 				</div>
 					<div class="row">
@@ -1138,10 +1226,33 @@ function volentry4() {
 var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
+var modal8 = document.getElementById("myModal8");
+var modal9 = document.getElementById("myModal9");
+var modal10 = document.getElementById("myModal10");
+var modal11 = document.getElementById("myModal11");
+var modal12 = document.getElementById("myModal12");
+var modal13 = document.getElementById("myModal13");
+var modal14 = document.getElementById("myModal14");
 					
 var img1 = document.getElementById("myImg1");
 var img2 = document.getElementById("myImg2");
 var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+var img7 = document.getElementById("myImg7");
+var img8 = document.getElementById("myImg8");
+var img9 = document.getElementById("myImg9");
+var img10 = document.getElementById("myImg10");
+var img11 = document.getElementById("myImg11");
+var img12 = document.getElementById("myImg12");
+var img13 = document.getElementById("myImg13");
+var img14 = document.getElementById("myImg14");
+				
 					
 img1.onclick = function(){
   modal1.style.display = "block";}
@@ -1149,17 +1260,61 @@ img2.onclick = function(){
   modal2.style.display = "block";}
 img3.onclick = function(){
   modal3.style.display = "block";}
+img4.onclick = function(){
+  modal4.style.display = "block";}
+img5.onclick = function(){
+  modal5.style.display = "block";}
+img6.onclick = function(){
+  modal6.style.display = "block";}
+img7.onclick = function(){
+  modal7.style.display = "block";}
+img8.onclick = function(){
+  modal8.style.display = "block";}
+img9.onclick = function(){
+  modal9.style.display = "block";}
+img10.onclick = function(){
+  modal10.style.display = "block";}
+img11.onclick = function(){
+  modal11.style.display = "block";}
+img12.onclick = function(){
+  modal12.style.display = "block";}
+img13.onclick = function(){
+  modal13.style.display = "block";}
+img14.onclick = function(){
+  modal14.style.display = "block";}
 
 
 var imggg1 = document.getElementById("imgg1");
 var imggg2 = document.getElementById("imgg2");
 var imggg3 = document.getElementById("imgg3");
+var imggg4 = document.getElementById("imgg4");
+var imggg5 = document.getElementById("imgg5");
+var imggg6 = document.getElementById("imgg6");
+var imggg7 = document.getElementById("imgg7");
+var imggg8 = document.getElementById("imgg8");
+var imggg9 = document.getElementById("imgg9");
+var imggg10 = document.getElementById("imgg10");
+var imggg11 = document.getElementById("imgg11");
+var imggg12 = document.getElementById("imgg12");
+var imggg13 = document.getElementById("imgg13");
+var imggg14 = document.getElementById("imgg14");
 
 window.onclick = function(event) {
-  if (event.target == imggg1 || event.target == imggg2 || event.target == imggg3) {
+  if (event.target == imggg1 || event.target == imggg2 || event.target == imggg3 || event.target == imggg4 || event.target == imggg5 || event.target == imggg6 || event.target == imggg7 || event.target == imggg8 || event.target == imggg9 || event.target == imggg10 || event.target == imggg11 || event.target == imggg12 || event.target == imggg13 || event.target == imggg14) {
     modal1.style.display = "none";
 	modal2.style.display = "none";
 	modal3.style.display = "none";
+	modal4.style.display = "none";
+	modal5.style.display = "none";
+	modal6.style.display = "none";
+	modal7.style.display = "none";
+	modal8.style.display = "none";
+	modal9.style.display = "none";
+	modal10.style.display = "none";
+	modal11.style.display = "none";
+	modal12.style.display = "none";
+    modal13.style.display = "none";
+    modal14.style.display = "none";
   }
 }
 
