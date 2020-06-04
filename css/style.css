@@ -2019,6 +2019,21 @@ cursor: pointer;
   }
 }
 
+@media (max-width: 1100px) {
+  .extra_contentw6a {
+    display: none;
+  }
+	
+  #read_morew6a {
+    display: inline;
+  }
+}
+
+.read_morew6a {
+cursor: pointer;
+ display: none;
+}
+
 .read_morew7 {
 cursor: pointer;
  display: none;
