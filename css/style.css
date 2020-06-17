@@ -2144,10 +2144,10 @@ cursor: pointer;
 
 .ADicon {
     content: url(AD.png);
-	margin-left: -32px;
-    width: 80px;
+	margin-left: 5.5px;
+    height: 12px;
 
-	margin-top: -32px;
+	margin-top: 15px;
 
     display: block;
     /* Other styles here */
@@ -2155,10 +2155,10 @@ cursor: pointer;
 
 .Uicon {
     content: url(U.png);
-    margin-left: -2.5px;
-    height: 46px;
+	margin-left: 7px;
+    height: 25px;
 
-	margin-top: 2.5px;
+	margin-top: 9px;
 
     display: block;
     /* Other styles here */
@@ -2166,10 +2166,10 @@ cursor: pointer;
 
 .JCPicon {
     content: url(JCP.png);
-	margin-left: -13px;
-    height: 60px;
+	margin-left: 9px;
+    height: 23px;
 
-	margin-top: -13px;
+	margin-top: 9px;
 
     display: block;
     /* Other styles here */
