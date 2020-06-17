@@ -1890,8 +1890,13 @@ pc8 {
 	
 	    h2{
         
-        font-size:px !important;
+        font-size: 18px !important;
     }
+	
+	.tablinks {
+	font-size: 14px !important;
+	
+}
 	
 }
 
@@ -2103,4 +2108,102 @@ cursor: pointer;
 .read_morew9 {
 cursor: pointer;
  display: none;
+}
+
+.ASUUicon {
+    content: url(ASUU.png);
+	margin: auto;
+    height: 30px;
+    width: 30px;
+	margin-top: 5px;
+    display: block;
+    /* Other styles here */
+}
+
+.Microsofticon {
+    content: url(Microsoft.png);
+	margin-left: 9.5px;
+    height: 22px;
+
+	margin-top: 9px;
+
+    display: block;
+    /* Other styles here */
+}
+
+.UHealthicon {
+    content: url(UHealth.png);
+	margin-left: 7px;
+    height: 25px;
+
+	margin-top: 9px;
+
+    display: block;
+    /* Other styles here */
+}
+
+.ADicon {
+    content: url(AD.png);
+	margin-left: -32px;
+    width: 80px;
+
+	margin-top: -32px;
+
+    display: block;
+    /* Other styles here */
+}
+
+.Uicon {
+    content: url(U.png);
+    margin-left: -2.5px;
+    height: 46px;
+
+	margin-top: 2.5px;
+
+    display: block;
+    /* Other styles here */
+}
+
+.JCPicon {
+    content: url(JCP.png);
+	margin-left: -13px;
+    height: 60px;
+
+	margin-top: -13px;
+
+    display: block;
+    /* Other styles here */
+}
+
+.IOUicon {
+    content: url(IOU.png);
+	
+    height: 60px;
+
+	
+
+    display: block;
+    /* Other styles here */
+}
+
+.UPCicon {
+    content: url(UPC.png);
+
+    height: 60px;
+
+	
+
+    display: block;
+    /* Other styles here */
+}
+
+.KKGicon {
+    content: url(KKG.png);
+
+    height: 60px;
+
+
+
+    display: block;
+    /* Other styles here */
 }
