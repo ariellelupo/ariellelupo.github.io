@@ -1699,7 +1699,7 @@ body.offcanvas {
   background-color: #C2C2C2; 
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 7px 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -1718,7 +1718,7 @@ body.offcanvas {
 
 .tablinks {
 	background: #FFFFFF;
-	margin-right: 12px ;
+	
 }
 
 
@@ -1880,8 +1880,19 @@ pc8 {
 @media screen and (max-width:700px){
     p{
         
+        font-size:13px !important;
+    }  
+	
+	    span{
+        
         font-size:14px !important;
     }  
+	
+	    h2{
+        
+        font-size:px !important;
+    }
+	
 }
 
 #MOREV1 {display: none;}
