@@ -2207,3 +2207,15 @@ cursor: pointer;
     display: block;
     /* Other styles here */
 }
+
+        #video-container {
+            
+        }
+
+        .video iframe {
+
+            top:0;
+            left:0;
+            width:100%;
+            
+        }
