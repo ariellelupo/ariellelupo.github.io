@@ -24,13 +24,24 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
+	
+	//	var fullHeight = function() {
+
+	//	if ( !isMobile.any() ) {
+	//		$('.js-fullheight').css('height', $(window).height());
+	//		$(window).resize(function(){
+	//			$('.js-fullheight').css('height', $(window).height());
+	//		});
+	//	}
+
+	// };
 
 	var fullHeight = function() {
 
 		if ( !isMobile.any() ) {
-			$('.js-fullheight').css('height', $(window).height());
+			$('.js-fullheight').css('height', $(window).innerHeight());
 			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
+				$('.js-fullheight').css('height', $(window).innerHeight());
 			});
 		}
 
