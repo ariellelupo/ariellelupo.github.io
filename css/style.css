@@ -2208,11 +2208,9 @@ cursor: pointer;
     /* Other styles here */
 }
 
-        #video-container {
-            
-        }
+ 
 
-        .video iframe {
+   .video iframe {
 
             top:0;
             left:0;
