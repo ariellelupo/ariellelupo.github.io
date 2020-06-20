@@ -224,7 +224,7 @@
 		
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "fade",
-			slideshowSpeed: 5000,
+			slideshowSpeed: 3000,
 			directionNav: true,
 			start: function(){
 				setTimeout(function(){
@@ -277,7 +277,7 @@
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
+		//$("#sticky_item").stick_in_parent();
 
 	};
 
