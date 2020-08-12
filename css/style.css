@@ -2212,6 +2212,16 @@ cursor: pointer;
     /* Other styles here */
 }
 
+.Amazonicon {
+    content: url(amazon.png);
+	
+    width: 35px;
+	margin-left: 3.5px;
+    margin-top: 14.5px;
+	
+
+    display: block;
+
  
 
    .video iframe {
