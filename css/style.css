@@ -2114,6 +2114,22 @@ cursor: pointer;
  display: none;
 }
 
+
+@media (max-width: 1100px) {
+  .extra_contentw10 {
+    display: none;
+  }
+	
+  #read_morew10 {
+    display: inline;
+  }
+}
+
+.read_morew10 {
+cursor: pointer;
+ display: none;
+}
+
 .ASUUicon {
     content: url(ASUU.png);
 	margin: auto;
