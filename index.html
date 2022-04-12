@@ -71,12 +71,12 @@
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#about" data-nav-section="about">About</a></li>
 						<!--<li><a href="#" data-nav-section="skills">Skills</a></li>-->
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="education">Qualifications</a></li>
-						<li><a href="#" data-nav-section="work">Portfolio</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						<li><a href="#experience" data-nav-section="experience">Experience</a></li>
+						<li><a href="#education" data-nav-section="education">Qualifications</a></li>
+						<li><a href="#portfolio" data-nav-section="portfolio">Portfolio</a></li>
+						<li><a href="#contact" data-nav-section="contact">Contact</a></li>
 					</ul>
 									<ul>
 					<!--<a href="#"><i class="icon-facebook2"></i></a>-->
@@ -877,14 +877,15 @@ function changeClass() {
 								 
 <script>
 function timelineshowmore() {
-  var ww = document.querySelectorAll("#Works, #Works2");
+  var ww = document.getElementById("Works");
+  var ww1 = document.getElementById("Works2");
   var workmore = document.getElementById("workmore");
-  if (ww.style.display === "block") {
-      ww.style.display = "none";
+  if (ww.style.display === "block", ww1.style.display === "block") {
+      ww.style.display = "none", ww1.style.display = "none";
 	  workmore.innerHTML = "Show Full Work History"; 
 	  
   } else {
-    ww.style.display = "block";
+    ww.style.display = "block", ww1.style.display = "block";
 	workmore.innerHTML = "Collapse Work History"; 
   }
 }
@@ -1194,7 +1195,7 @@ function changeClass() {
 			</section>						
 			
 
-			<section class="colorlib-work" data-section="work">
+			<section class="colorlib-portfolio" data-section="portfolio">
 				
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -1316,7 +1317,7 @@ function changeClass() {
 							<div class="project" style="background-image: url(images/img-2.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
+										<h3><a href="portfolio.html">portfolio 02</a></h3>
 										<span>Animation</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -1331,7 +1332,7 @@ function changeClass() {
 							<div class="project" style="background-image: url(images/img-3.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
+										<h3><a href="portfolio.html">portfolio 03</a></h3>
 										<span>Illustration</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -1364,7 +1365,7 @@ function changeClass() {
 							<div class="project" style="background-image: url(images/img-1.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
+										<h3><a href="portfolio.html">portfolio 01</a></h3>
 										<span>Website</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -1379,7 +1380,7 @@ function changeClass() {
 							<div class="project" style="background-image: url(images/img-2.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
+										<h3><a href="portfolio.html">portfolio 02</a></h3>
 										<span>Animation</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -1400,7 +1401,7 @@ function changeClass() {
 							<div class="project" style="background-image: url(images/img-1.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
+										<h3><a href="portfolio.html">portfolio 01</a></h3>
 										<span>Website</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
