@@ -1913,6 +1913,9 @@ pc8 {
 #Works {display: none;
 }
 
+#Works2 {display: none;
+}
+
 
 @media (max-width: 1100px) {
   .extra_contenta1 {
@@ -2129,6 +2132,52 @@ cursor: pointer;
 cursor: pointer;
  display: none;
 }
+
+@media (max-width: 1100px) {
+  .extra_contentw11 {
+    display: none;
+  }
+	
+  #read_morew11 {
+    display: inline;
+  }
+}
+
+.read_morew11 {
+cursor: pointer;
+ display: none;
+}
+
+@media (max-width: 1100px) {
+  .extra_contentw12 {
+    display: none;
+  }
+	
+  #read_morew12 {
+    display: inline;
+  }
+}
+
+.read_morew12 {
+cursor: pointer;
+ display: none;
+}
+
+@media (max-width: 1100px) {
+  .extra_contentw13 {
+    display: none;
+  }
+	
+  #read_morew13 {
+    display: inline;
+  }
+}
+
+.read_morew13 {
+cursor: pointer;
+ display: none;
+}
+
 
 .ASUUicon {
     content: url(ASUU.png);

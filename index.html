@@ -145,9 +145,9 @@
 										<span class="heading-meta">Who Am I?</span>
 										<h2 class="colorlib-heading">About Me</h2>
 										<div class="animate-box" data-animate-effect="fadeInBottom">
-										<p><strong>Hi I'm Arielle!</strong> I am currently in my final year at the University of Utah obtaining an undergraduate degree in biomedical engineering and a minor in marketing. In the past I've done everything from extensive technical work, to photography.<!--Microsoft and Amazon--> My love for tech and design are equaled only by my passion for the outdoors and travel. 
+										<p><strong>Hi I'm Arielle!</strong>I recently graduated from the University of Utah with an Bachelor's Degree in Biomedical Engineering and a minor in Marketing. I am currently pursuing a Master's Degree in Data Analytics. In the past I've done everything from extensive technical work, to photography.<!--Microsoft and Amazon--> My love for tech and design are equaled only by my passion for the outdoors and travel. 
 										</p>
-										<p>My future goals are centered around being on the frontlines of research and development in the medical industry. I hope to bring about change that positively affects patient lives.</p>
+										<p>My future goals are centered around being on the frontlines of research and development in engineering and tech. I hope to bring about change that positively affects lives.</p>
 											
 											<p><strong>Having very diverse interests and a unique professional history has granted me a large and adaptable skillset. With proficiencies in many technical skills added to my interpersonal expertise, I bring a competitive, multifaceted perspective to whatever I set my mind to.</strong></p>
 							<p>  &zwnj; </p>
@@ -505,7 +505,7 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
 							<span class="heading-meta">Background</span>
-							<h2 class="colorlib-heading">Work Experience</h2>
+							<h2 class="colorlib-heading">Work Experience Highlights</h2>
 						</div>
 					</div>
 					
@@ -513,6 +513,77 @@
 						<div class="col-md-12">
 				         <div class="timeline-centered">
 							 <div class="animate-box" data-animate-effect="fadeInRight">
+								 
+								 <article class="timeline-entry">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="Microsofticon"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a>Support Engineer</a> <span>September 2021-Present,<i> Sammamish, Washington</i></span></h2>
+									   <pc1>MICROSOFT</pc1>
+					                  <p>... <span id="extra_contentw13" class="extra_contentw13">...</span>
+									<strong><span class="read_morew13" id="read_morew13">Read More</span></strong></p>
+									  								   
+					               </div>
+					            </div>
+					         </article>
+								 
+								 <script>
+
+document.getElementById("read_morew13").addEventListener( 'click' , changeClass);
+
+function changeClass() {
+    var content = document.getElementById("extra_contentw13");
+    var btn = document.getElementById("read_morew13");
+    content.classList.toggle('show');
+    
+    if (content.classList.contains("show")) {
+            btn.innerHTML = "Read Less";
+        } else {
+            btn.innerHTML = "Read More";
+        }
+}
+</script>
+								 
+								 <article class="timeline-entry">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-3">
+					                  <i class="Amazonicon"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a>R&D Engineer</a> <span>February 2021-September 2021,<i> Salt Lake City, Utah</i></span></h2>
+									   <pc3>AVIA VASCULAR</pc3>
+					                  <p>... <span id="extra_contentw12" class="extra_contentw12">...</span>
+									<strong><span class="read_morew12" id="read_morew12">Read More</span></strong></p>
+									  								   
+					               </div>
+					            </div>
+					         </article>
+								 
+								 <div id="Works2">
+								 
+								 <article class="timeline-entry">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-3">
+					                  <i class="Amazonicon"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a>Data Specialist</a> <span>February 2021-May 2021,<i> Sandy, Utah</i></span></h2>
+									   <pc3>RIVET</pc3>
+					                  <p>... <span id="extra_contentw11" class="extra_contentw11">...</span>
+									<strong><span class="read_morew11" id="read_morew11">Read More</span></strong></p>
+									  								   
+					               </div>
+					            </div>
+									 </div>
+					         </article>
 					 <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
 
@@ -546,7 +617,7 @@ function changeClass() {
         }
 }
 </script>				 
-
+ <div id="Works">
 
 					         <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
@@ -600,6 +671,7 @@ function changeClass() {
         }
 }
 </script>	
+								 
 								 
 					         <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
@@ -708,7 +780,7 @@ function changeClass() {
         }
 }
 </script>
-								 <div id="Works">
+								 
 								 
 					         <article class="timeline-entry">
 					            <div class="timeline-entry-inner">
@@ -797,7 +869,7 @@ function changeClass() {
 					            <div class="timeline-entry-inner2">
 					              
 					               <div class="timeline-label2">
-								 <p id="workmore" class="readmore btn btn-primary btn-lg btn-load-more" onclick="timelineshowmore()">See Full List</p>
+								 <p id="workmore" class="readmore btn btn-primary btn-lg btn-load-more" onclick="timelineshowmore()">Show Full Work History</p>
 					
 									   </div>
 									</article>
@@ -805,15 +877,15 @@ function changeClass() {
 								 
 <script>
 function timelineshowmore() {
-  var ww = document.getElementById("Works");
+  var ww = document.querySelectorAll("#Works, #Works2");
   var workmore = document.getElementById("workmore");
   if (ww.style.display === "block") {
       ww.style.display = "none";
-	  workmore.innerHTML = "See Full List"; 
+	  workmore.innerHTML = "Show Full Work History"; 
 	  
   } else {
     ww.style.display = "block";
-	workmore.innerHTML = "Hide List"; 
+	workmore.innerHTML = "Collapse Work History"; 
   }
 }
 </script>								 
@@ -953,10 +1025,26 @@ function volentry4() {
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInBottom">
 							<div class="fancy-collapse-panel">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									
+										<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Master's Degree in Data Analytics
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <pc6><strong>WESTERN GOVERNORS UNIVERSITY</strong></pc6>
+															<i><p>2022-Present</p></i>
+												<p><strong>Notable Courses: </strong>blah</p>
+									        </div>
+									    </div>
+									</div>
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingOne">
 									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Bachelor Degree in  Biomedical Engineering
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Bachelor's Degree in  Biomedical Engineering
 									            </a>
 									        </h4>
 									    </div>
@@ -965,7 +1053,7 @@ function volentry4() {
 									            <pc2><strong>UNIVERSITY OF UTAH</strong></pc2>
 															<i><p>2016-2021</p></i>
 														
-												
+												<p><strong>Minor in Marketing </strong></p>
 												<p>
 													<strong>Activities and Societies: </strong>Student Government, Biomedical Engineering Society,  Society of Women Engineers</p>
 													<p><strong>Notable Courses: </strong>BioDesign, Biomaterials, Biomechanics, Biotransport, Computational Methods, Computing in Physics, Differential Equations and Linear Algebra, Physics II, Physiology for Engineers</p>
@@ -973,25 +1061,11 @@ function volentry4() {
 									    </div>
 									</div>
 									
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Minor in Marketing
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <pc6><strong>UNIVERSITY OF UTAH</strong></pc6>
-															<i><p>2016-2021</p></i>
-												<p><strong>Notable Courses: </strong>Strategic Sales Management, Personal Selling, Consumer Insights and Analytics</p>
-									        </div>
-									    </div>
-									</div>
+
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingThree">
 									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School Secondary Education
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School Diploma
 									            </a>
 									        </h4>
 									    </div>
@@ -999,7 +1073,6 @@ function volentry4() {
 									        <div class="panel-body">
 									            <pc5><strong>MERIT COLLEGE PREPARATORY ACADEMY</strong></pc5>
 															<i><p>2012-2016</p></i>
-												<p>Concurrent Enrollment with Utah Valley University to earn college and high school credits simultaneously.</p>
 													
 													<p><strong>Activities and Societies: </strong>Yearbook Editor in Chief, Student Government, National Honor Society, ASK (service club), Photography Club</p>
 									        </div>
@@ -1379,7 +1452,7 @@ document.getElementById("defaultOpen").click();
 									<a href="mailto: lupo.arielle@gmail.com"><i class="icon-mail5"></i></a>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="mailto: lupo.arielle@gmail.com">lupo.arielle@gmail.com</a></p>
+									<p><a href="mailto: lupo.arielle@gmail.com">Email</a></p>
 								</div>
 							</div>
 
