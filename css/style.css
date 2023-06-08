@@ -632,6 +632,10 @@ body.offcanvas {
     background: #92C781; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-8 {
     background: #D56BC0; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-9 {
+    background: #E322A3; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-10 {
+    background: #871DF; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
     background: #fff;
     width: 20px;
