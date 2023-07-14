@@ -2238,10 +2238,10 @@ cursor: pointer;
 
 .Uicon {
     content: url(U.png);
-	margin-left: 7.5px;
+	margin-left: 7.75px;
     height: 23px;
 
-	margin-top: 9px;
+	margin-top: 9.5px;
 
     display: block;
     /* Other styles here */
@@ -2314,10 +2314,10 @@ cursor: pointer;
 
 .Aviaicon {
     content: url(Avia.png);
-	margin-left: 5px;
+	margin-left: 4.5px;
     width: 32px;
 
-	margin-top: 11.5px;
+	margin-top: 12px;
 
     display: block;
 }
