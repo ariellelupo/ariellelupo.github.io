@@ -2219,7 +2219,7 @@ cursor: pointer;
 	margin-left: 7px;
     height: 25px;
 
-	margin-top: 9px;
+	margin-top: 10px;
 
     display: block;
     /* Other styles here */
@@ -2227,7 +2227,7 @@ cursor: pointer;
 
 .ADicon {
     content: url(AD.png);
-	margin-left: 5.5px;
+	margin-left: 5px;
     height: 12px;
 
 	margin-top: 15px;
@@ -2238,10 +2238,10 @@ cursor: pointer;
 
 .Uicon {
     content: url(U.png);
-	margin-left: 7px;
+	margin-left: 6px;
     height: 25px;
 
-	margin-top: 9px;
+	margin-top: 8px;
 
     display: block;
     /* Other styles here */
@@ -2249,7 +2249,7 @@ cursor: pointer;
 
 .JCPicon {
     content: url(JCP.png);
-	margin-left: 9px;
+	margin-left: 8.5px;
     height: 23px;
 
 	margin-top: 9px;
@@ -2294,7 +2294,7 @@ cursor: pointer;
 .Amazonicon {
     content: url(amazon.png);
 	
-    width: 35px;
+    width: 32px;
 	margin-left: 3.5px;
     margin-top: 14.5px;
 	
@@ -2304,7 +2304,7 @@ cursor: pointer;
 
 .Riveticon {
     content: url(Rivet.png);
-	margin-left: 9px;
+	margin-left: 8px;
     height: 23px;
 
 	margin-top: 9px;
@@ -2315,7 +2315,7 @@ cursor: pointer;
 .Aviaicon {
     content: url(Avia.png);
 	margin-left: 9px;
-    height: 23px;
+    width: 23px;
 
 	margin-top: 9px;
 
