@@ -2300,7 +2300,27 @@ cursor: pointer;
 	
 
     display: block;
+}
 
+.Riveticon {
+    content: url(Rivet.png);
+	margin-left: 9px;
+    height: 23px;
+
+	margin-top: 9px;
+
+    display: block;
+}
+
+.Aviaicon {
+    content: url(Avia.png);
+	margin-left: 9px;
+    height: 23px;
+
+	margin-top: 9px;
+
+    display: block;
+}
  
 
    .video iframe {
